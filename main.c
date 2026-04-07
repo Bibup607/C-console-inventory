@@ -88,7 +88,7 @@ int main() {
 
     int choice;
 
-    // Главный цикл программы, чтобы она не закрывалась
+    // Главный цикл программы
     while (1) {
         printf("\n====== Менеджер товаров ======\n");
         printf("1. Управление инвентарем\n");
@@ -99,7 +99,7 @@ int main() {
         if (choice == 0) break;
         if (choice != 1) continue;
 
-        // Вложенное меню (Инвентарь)
+        // Инвентарь
         int inventChoice;
         while (1) {
             showProducts();
@@ -115,7 +115,7 @@ int main() {
             } else if (inventChoice == 2) {
                 deleteProduct();
             } else if (inventChoice == 0) {
-                break; // Возврат в главное меню
+                break; 
             }
         }
     }
